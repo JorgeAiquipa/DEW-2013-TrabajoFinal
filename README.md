@@ -12,10 +12,12 @@ ANGEL CHUCHON<br />
 LUIS LINO
 
 
-VINCULO A LA BITACORA
+VINCULO A LA BITACORA <br />
+https://docs.google.com/spreadsheet/ccc?key=0AhhbymLlvbcrdHZvUzhWeDhEd2Q5MGdFUjVqNm9oaXc#gid=0
 
-VINCULO AL SCRUMY
-
+<br />
+VINCULO AL SCRUMY<br />
+http://scrumy.com/starter25liaising
 
 
 LA RED SOCIAL A USAR : TWITTER
