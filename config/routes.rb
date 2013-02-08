@@ -1,4 +1,6 @@
 Upcdew::Application.routes.draw do
+  resources :locals
+
   resources :districts
 
   # The priority is based upon order of creation:

@@ -11,12 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130208104448) do
+ActiveRecord::Schema.define(:version => 20130208154346) do
 
   create_table "districts", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "locals", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.text     "gmap"
+    t.integer  "district_id"
+    t.string   "phone"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "locals", ["district_id"], :name => "index_locals_on_district_id"
 
 end
