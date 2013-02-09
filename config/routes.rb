@@ -1,4 +1,6 @@
 Upcdew::Application.routes.draw do
+  resources :tournaments
+
   resources :locals
 
   resources :districts

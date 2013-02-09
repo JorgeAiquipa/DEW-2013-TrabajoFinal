@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130208154346) do
+ActiveRecord::Schema.define(:version => 20130209124314) do
 
   create_table "districts", :force => true do |t|
     t.string   "name"
@@ -30,5 +30,17 @@ ActiveRecord::Schema.define(:version => 20130208154346) do
   end
 
   add_index "locals", ["district_id"], :name => "index_locals_on_district_id"
+
+  create_table "tournaments", :force => true do |t|
+    t.string   "name"
+    t.integer  "group"
+    t.date     "date"
+    t.time     "time"
+    t.integer  "local_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "tournaments", ["local_id"], :name => "index_tournaments_on_local_id"
 
 end
