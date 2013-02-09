@@ -3,7 +3,7 @@ DEW-2013-TrabajoFinal
 
 Repositorio para el trabajo final DEW 2013-0
 
-INTEGRANTES DEL GRUPO<br /><br />
+INTEGRANTES DEL GRUPO<br />
 
 JORGE AIQUIPA PEREZ<br />
 CARLOS BENAVIDES<br />
