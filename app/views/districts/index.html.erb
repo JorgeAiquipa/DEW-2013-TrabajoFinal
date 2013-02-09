@@ -1,19 +1,20 @@
 <h1>Listing districts</h1>
 
-<table>
+<table border="1">
   <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th >Name</th>
+    <th>'What do you do?'</th>
   </tr>
+
+  <br />
 
 <% @districts.each do |district| %>
   <tr>
     <td><%= district.name %></td>
-    <td><%= link_to 'Show', district %></td>
-    <td><%= link_to 'Edit', edit_district_path(district) %></td>
-    <td><%= link_to 'Destroy', district, confirm: 'Are you sure?', method: :delete %></td>
+    <td>
+      <%= link_to 'Show', district %> - 
+      <%= link_to 'Edit', edit_district_path(district) %> - 
+    <%= link_to 'Destroy', district, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
@@ -21,3 +22,5 @@
 <br />
 
 <%= link_to 'New District', new_district_path %>
+<%= link_to 'Go to Locals', locals_path %>
+

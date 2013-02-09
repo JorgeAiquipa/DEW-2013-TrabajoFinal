@@ -1,27 +1,27 @@
 <h1>Listing locals</h1>
 
-<table>
+<br />
+
+<table border="1">
   <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Gmap</th>
-    <th>District</th>
-    <th>Phone</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th width="20%">Name</th>
+    <th width="25%">Address</th>
+    <th width="20%">District</th>
+    <th width="20%">Phone</th>
+    <!--<th>Gmap</th>-->
+    <th>'What do you do?'</th>
+   
   </tr>
 
 <% @locals.each do |local| %>
   <tr>
     <td><%= local.name %></td>
     <td><%= local.address %></td>
-    <td><%= local.gmap %></td>
     <td><%= local.district.name %></td>
     <td><%= local.phone %></td>
-    <td><%= link_to 'Show', local %></td>
-    <td><%= link_to 'Edit', edit_local_path(local) %></td>
-    <td><%= link_to 'Destroy', local, confirm: 'Are you sure?', method: :delete %></td>
+    <!--<td><%= local.gmap %></td>-->
+    <td><%= link_to 'Show', local %>
+    - <%= link_to 'Edit', edit_local_path(local) %> - <%= link_to 'Destroy', local, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
@@ -29,3 +29,4 @@
 <br />
 
 <%= link_to 'New Local', new_local_path %>
+<%= link_to 'Go to District', districts_path %>
