@@ -3,21 +3,18 @@ DEW-2013-TrabajoFinal
 
 Repositorio para el trabajo final DEW 2013-0
 
-INTEGRANTES DEL GRUPO<br /><br />
+Integrantes del Grupo<br/>
 
-JORGE AIQUIPA PEREZ<br />
-CARLOS BENAVIDES<br />
-CESAR CENTENO<br />
-ANGEL CHUCHON<br />
-LUIS LINO
+Jorge Aiquipa Perez (Retirado)<br />
+Carlos Benavides<br />
+Cesar Centeno<br />
+Angel Chuchon<br />
+Luis Lino
 
-
-VINCULO A LA BITACORA <br />
+Vinculo de la Bitacora<br/>
 https://docs.google.com/spreadsheet/ccc?key=0AhhbymLlvbcrdHZvUzhWeDhEd2Q5MGdFUjVqNm9oaXc#gid=0
 
-<br />
-VINCULO AL SCRUMY<br />
+Vinculo al Scrumy<br/>
 http://scrumy.com/starter25liaising
 
-
-LA RED SOCIAL A USAR : TWITTER
+Red Social : TWITTER
