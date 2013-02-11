@@ -1,10 +1,17 @@
 Upcdew::Application.routes.draw do
+  resources :users
+
+  resources :document_types
+
   resources :tournaments
 
   resources :locals
 
   resources :districts
 
+  resources :user_sessions
+  match 'login' => 'user_sessions#new',as: :login
+  match 'logout' => 'user_sessions#destroy',as: :logout
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

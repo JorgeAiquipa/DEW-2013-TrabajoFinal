@@ -11,9 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130209124314) do
+ActiveRecord::Schema.define(:version => 20130210134048) do
 
   create_table "districts", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "document_types", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -42,5 +48,27 @@ ActiveRecord::Schema.define(:version => 20130209124314) do
   end
 
   add_index "tournaments", ["local_id"], :name => "index_tournaments_on_local_id"
+
+  create_table "users", :force => true do |t|
+    t.string   "username",         :null => false
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "salt"
+    t.string   "name"
+    t.string   "father_last_name"
+    t.string   "mother_last_name"
+    t.boolean  "gender"
+    t.integer  "document_type_id"
+    t.string   "document_number"
+    t.string   "address"
+    t.integer  "district_id"
+    t.date     "birth_date"
+    t.string   "mobile_phone"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "users", ["district_id"], :name => "index_users_on_district_id"
+  add_index "users", ["document_type_id"], :name => "index_users_on_document_type_id"
 
 end

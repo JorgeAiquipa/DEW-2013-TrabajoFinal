@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Father last name:</b>
+  <%= @user.father_last_name %>
+</p>
+
+<p>
+  <b>Mother last name:</b>
+  <%= @user.mother_last_name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @user.gender.show 'yes' : 'no' %>
+  
+</p>
+
+<p>
+  <b>Document type:</b>
+  <%= @user.document_type.name %>
+</p>
+
+<p>
+  <b>Document number:</b>
+  <%= @user.document_number %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @user.district.name %>
+</p>
+
+<p>
+  <b>Birth date:</b>
+  <%= @user.birth_date %>
+</p>
+
+<p>
+  <b>Mobile phone:</b>
+  <%= @user.mobile_phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
